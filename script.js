@@ -4,12 +4,16 @@ const links = {
     support: "https://discord.com/invite/fcPF66DubA",
     discord: "https://discord.com/invite/fcPF66DubA",
     twitter: "https://x.com/Discord_Spectra",
-    github: "https://github.com/SpectraDiscordBot/Spectra"
+    github: "https://github.com/SpectraDiscordBot/Spectra",
+    tos: "https://docs.google.com/file/d/1zHod3muZfQwq7Si1OaK7trwCqYYFN5QWFRsD2M2np14/edit?usp=sharing",
+    privacy: "https://drive.google.com/file/d/1HQaIKPvNjiSlx3gXn8KiHcVcfLlfDXbv/view?usp=sharing"
 };
 
 document.getElementById('invite-btn').href = links.invite;
 document.getElementById('discord-link').href = links.discord;
 document.getElementById('twitter-link').href = links.twitter;
 document.getElementById('github-link').href = links.github;
+document.getElementById('tos-link').href = links.tos;
+document.getElementById('privacy-link').href = links.privacy;
 
 document.querySelector('.hero-text p').innerText = "Spectra brings utility and moderation tools to your Discord server with ease!";
