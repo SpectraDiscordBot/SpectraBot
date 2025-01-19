@@ -7,7 +7,7 @@ const links = {
     github: "https://github.com/SpectraDiscordBot/Spectra",
     tos: "https://docs.google.com/file/d/1zHod3muZfQwq7Si1OaK7trwCqYYFN5QWFRsD2M2np14/edit?usp=sharing",
     privacy: "https://drive.google.com/file/d/1HQaIKPvNjiSlx3gXn8KiHcVcfLlfDXbv/view?usp=sharing",
-    docs: "https://github.com/SpectraDiscordBot/Spectra"
+    docs: "https://www.notion.so/spectra-docs/Introduction-17f36833aca1806bbd11cd5faa438fef"
 };
 
 document.getElementById('invite-btn').href = links.invite;
