@@ -1,6 +1,5 @@
-// Replace these variables with your actual links when you have them
 const links = {
-    invite: "https://discord.com/oauth2/authorize?client_id=1279512390756470836&permissions=939912256&integration_type=0&scope=bot+applications.commands",
+    invite: "https://discord.com/oauth2/authorize?client_id=1279512390756470836&permissions=1512768400582&integration_type=0&scope=bot+applications.commands&redirect_uri=https%3A%2F%2Fspectrabot.pages.dev&response_type=code",
     support: "https://discord.com/invite/fcPF66DubA",
     discord: "https://discord.com/invite/fcPF66DubA",
     twitter: "https://x.com/Discord_Spectra",
