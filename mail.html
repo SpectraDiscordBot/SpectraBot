@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Spectra - Email Us</title>
+    <meta name="description" content="Contact Spectra Discord Bot via email">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a1b23;
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #8A2BE2;
+            margin-bottom: 10px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .contact-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #8A2BE2;
+        }
+
+        .contact-card p {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #8A2BE2, #FF69B4);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+        }
+
+        .email-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+        }
+
+        .email-display {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-top: 20px;
+            font-family: monospace;
+        }
+
+        .back-link {
+            color: #8A2BE2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #FF69B4;
+        }
+
+        @media (max-width: 768px) {
+            .contact-card {
+                padding: 30px 20px;
+            }
+
+            .logo-text {
+                font-size: 2rem;
+            }
+
+            .contact-card h2 {
+                font-size: 1.8rem;
+            }
+
+            .contact-card p {
+                font-size: 1rem;
+            }
+
+            .email-link {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.gif" alt="Spectra Logo" class="logo-img">
+            <h1>Spectra</h1>
+        </div>
+        
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <p>Have questions or need support? Reach out to us via email.</p>
+            <a href="mailto:spectra.official@protonmail.com" class="email-link">Send Email</a>
+            <div class="email-display">spectra.official@protonmail.com</div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
