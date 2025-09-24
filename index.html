@@ -3,59 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spectra</title>
+    <title>Spectra - Advanced Discord Bot</title>
+    <meta name="description" content="Spectra is a powerful Discord bot for server management with advanced moderation, auto-moderation, role management, and more!">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="container">
+    <header class="header">
+        <nav class="nav">
             <div class="logo-container">
-                <img src="logo.gif" alt="Spectra Logo" class="logo">
-            </div>
-            <div class="hero-text">
+                <img src="logo.gif" alt="Spectra Logo" class="logo-img">
                 <h1>Spectra</h1>
-                <p>Your powerful assistant for Discord, with moderatiom, and utility at its core.</p>
-                <a href="#" class="cta-button" id="invite-btn">Invite Spectra</a>
             </div>
-        </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#support" class="nav-link">Support</a>
+                <a href="https://github.com/SpectraDiscordBot/Spectra" class="nav-link">GitHub</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1279512390756470836&permissions=1512768400582&integration_type=0&scope=bot+applications.commands&redirect_uri=https%3A%2F%2Fspectrabot.pages.dev&response_type=code" class="nav-link btn-primary">Add to Discord</a>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <section class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <img src="f1.gif" alt="Feature 1">
-                    <h3>Advanced Moderation</h3>
-                    <p>Take control with automatic moderation, notes, warnings and more.</p>
-                </div>
-                <div class="card">
-                    <img src="f2.gif" alt="Feature 2">
-                    <h3>Utility Commands</h3>
-                    <p>Let Spectra handle tasks like anti toxicity, user reports, anti-ping and more.</p>
-                </div>
-                <div class="card">
-                    <img src="f3.gif" alt="Feature 3">
-                    <h3>Customizable Settings</h3>
-                    <p>Spectra offers full customizability of it's features, like the prefix, welcome message, button roles and more.</p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Your All-in-One Discord Bot</h1>
+                <p class="hero-subtitle">Powerful moderation, role management, and server stats all in one place. 100% free and open source.</p>
+                <div class="hero-buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1279512390756470836&permissions=1512768400582&integration_type=0&scope=bot+applications.commands&redirect_uri=https%3A%2F%2Fspectrabot.pages.dev&response_type=code" class="btn btn-primary">Add to Discord</a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="social-links">
-                <a href="#" id="discord-link">Discord</a>
-                <a href="#" id="twitter-link">Twitter</a>
-                <a href="#" id="github-link">GitHub</a>
-                <a href="#" id="tos-link">Terms of Service</a>
-                <a href="#" id="privacy-link">Privacy Policy</a>
-                <a href="#" id="docs">Documentation</a>
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Powerful Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z"/>
+                                <path d="M12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16Z"/>
+                                <path d="M12 6C10.02 6 8.21 7.08 7.21 8.79L8.79 7.21C9.92 5.69 11.83 4.78 13.71 5.03C15.59 5.28 17.12 6.68 17.47 8.53C17.82 10.38 16.91 12.29 15.39 13.41C13.87 14.54 11.96 14.91 10.11 14.26C8.26 13.61 7.08 11.98 7.08 10.11C7.08 8.24 8.71 6.92 10.58 7.08"/>
+                            </svg>
+                        </div>
+                        <h3>Advanced Moderation</h3>
+                        <p>Complete suite of moderation tools including warnings, bans, anti-spam, anti-toxicity, and anti-ping protection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21V4H7V21M17 10H7M17 14H7M7 18H17"/>
+                            </svg>
+                        </div>
+                        <h3>Role Management</h3>
+                        <p>Advanced role management with auto-roles, reaction roles, and customizable attributes for seamless server organization.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2Z"/>
+                                <path d="M12 8V12L15 15"/>
+                            </svg>
+                        </div>
+                        <h3>Server Stats</h3>
+                        <p>Track your server’s growth with dynamic counters for members, bots, boosts, channels, roles, emojis, stickers, and threads.</p>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2025 Spectra Bot | All rights reserved.</p>
+        </section>
+
+        <section id="support" class="support">
+            <div class="container">
+                <h2 class="section-title">Get Support</h2>
+                <div class="support-grid">
+                    <a href="https://www.notion.so/spectra-docs/Introduction-17f36833aca1806bbd11cd5faa438fef" class="support-card">
+                        <div class="support-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z"/>
+                                <path d="M14 2V8H20"/>
+                                <path d="M16 13H8"/>
+                                <path d="M16 17H8"/>
+                                <path d="M10 9H8"/>
+                            </svg>
+                        </div>
+                        <h3>Documentation</h3>
+                    </a>
+                    <a href="https://top.gg/bot/1279512390756470836/vote" class="support-card">
+                        <div class="support-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z"/>
+                                <path d="M12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16Z"/>
+                                <path d="M12 6C10.02 6 8.21 7.08 7.21 8.79L8.79 7.21C9.92 5.69 11.83 4.78 13.71 5.03C15.59 5.28 17.12 6.68 17.47 8.53C17.82 10.38 16.91 12.29 15.39 13.41C13.87 14.54 11.96 14.91 10.11 14.26C8.26 13.61 7.08 11.98 7.08 10.11C7.08 8.24 8.71 6.92 10.58 7.08"/>
+                            </svg>
+                        </div>
+                        <h3>Vote on Top.gg</h3>
+                    </a>
+                    <a href="https://github.com/SpectraDiscordBot/Spectra" class="support-card">
+                        <div class="support-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z"/>
+                                <path d="M12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16Z"/>
+                            </svg>
+                        </div>
+                        <h3>Open Source</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>Your all-in-one Discord bot for server management and user interaction!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="https://github.com/SpectraDiscordBot/Spectra">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html#terms">Terms of Service</a></li>
+                        <li><a href="legal.html#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Spectra Bot. All rights reserved.</p>
         </div>
     </footer>
 

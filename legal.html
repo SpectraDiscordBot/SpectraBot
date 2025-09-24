@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service & Privacy Policy - Spectra</title>
+    <meta name="description" content="Terms of Service and Privacy Policy for Spectra Discord Bot">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a1b23;
+            color: #ffffff;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: rgba(26, 27, 35, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #8A2BE2;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #8A2BE2;
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .content {
+            padding: 50px 20px;
+        }
+
+        .policy-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .policy-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #8A2BE2;
+        }
+
+        .policy-section h3 {
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+            color: #ffffff;
+        }
+
+        .policy-section p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background: #121318;
+            padding: 30px 0 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer p {
+            color: #b0b0b0;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: rgba(26, 27, 35, 0.95);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 40px;
+                transition: left 0.3s ease;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-link {
+                margin: 15px 0;
+                font-size: 1.2rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .policy-section {
+                padding: 25px 20px;
+            }
+
+            .policy-section h2 {
+                font-size: 2rem;
+            }
+
+            .policy-section h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="logo.gif" alt="Spectra Logo" class="logo-img">
+                <h1>Spectra</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#terms" class="nav-link">Terms of Service</a>
+                <a href="#privacy" class="nav-link">Privacy Policy</a>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <div id="terms" class="policy-section">
+                    <h2>Terms of Service</h2>
+                    <h3>1. Introduction</h3>
+                    <p>By using Spectra ("the Bot"), you agree to comply with and be bound by these Terms of Service. If you do not agree with any part of these terms, you must not use the Bot.</p>
+                    
+                    <h3>2. Use of the Bot</h3>
+                    <p>- The Bot is provided for use on Discord servers and must not be used for any illegal or unauthorized purposes.</p>
+                    <p>- You agree not to exploit or abuse the Bot in any way.</p>
+                    <p>- The Bot's functionalities may change at any time without notice.</p>
+                    
+                    <h3>3. Data Collection and Usage</h3>
+                    <p>- Spectra collects certain data as described in our Privacy Policy to provide the intended functionalities.</p>
+                    <p>- You are responsible for any data that you provide to the Bot.</p>
+                    <p>- The Bot may experience downtime or interruptions due to maintenance, updates, or unforeseen issues.</p>
+                    
+                    <h3>4. Changes to the Terms</h3>
+                    <p>We reserve the right to update or change these Terms of Service at any time. Continued use of the Bot after changes are made will constitute your acceptance of the new terms.</p>
+                    
+                    <h3>5. Liability</h3>
+                    <p>- The Bot is provided "as is" without any warranties, express or implied.</p>
+                    <p>- We are not liable for any damages arising from the use or inability to use the Bot.</p>
+                    
+                    <h3>6. Contact</h3>
+                    <p>For questions about these Terms of Service, please contact us in our support server.</p>
+                </div>
+
+                <div id="privacy" class="policy-section">
+                    <h2>Privacy Policy</h2>
+                    <h3>1. Introduction</h3>
+                    <p>This Privacy Policy explains how Spectra collects, uses, and protects your data when you use the Bot.</p>
+                    
+                    <h3>2. Data Collection</h3>
+                    <p>Spectra may collect the following types of data:</p>
+                    <p>- <strong>User Data:</strong> Usernames, IDs, and messages necessary for command processing.</p>
+                    <p>- <strong>Server Data:</strong> Server IDs, channel IDs, and role information to provide features like AutoRole and Welcome Messages.</p>
+                    <p>- <strong>Interaction Data:</strong> Logs of interactions with commands to ensure proper functionality and troubleshoot issues.</p>
+                    
+                    <h3>3. Data Usage</h3>
+                    <p>- Data is used solely for the purposes of providing and improving the Bot's services.</p>
+                    <p>- We do not share, sell, or distribute your data to third parties.</p>
+                    
+                    <h3>4. Data Storage</h3>
+                    <p>- Data is stored securely in our database and is only accessible to authorized personnel.</p>
+                    <p>- Data will be retained as long as it is necessary for the Bot's operation or until you request its deletion.</p>
+                    
+                    <h3>5. Data Security</h3>
+                    <p>We implement industry-standard security measures to protect your data, but we cannot guarantee complete security of data shared over the internet.</p>
+                    
+                    <h3>6. User Rights</h3>
+                    <p>- <strong>Access and Correction:</strong> You have the right to access and correct the data we hold about you.</p>
+                    <p>- <strong>Data Deletion:</strong> You can request the deletion of your data by contacting us, though some data may be retained for legal or operational reasons.</p>
+                    
+                    <h3>7. Changes to the Privacy Policy</h3>
+                    <p>We may update this Privacy Policy periodically. You are encouraged to review this policy regularly.</p>
+                    
+                    <h3>8. Contact</h3>
+                    <p>For any questions regarding this Privacy Policy, please contact us in our support server.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Spectra Bot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            mobileToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
