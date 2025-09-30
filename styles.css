@@ -236,7 +236,7 @@ body {
     align-items: flex-start;
     gap: -60px;
     flex-wrap: wrap;
-    perspective: 1000px; /* makes rotation look 3D */
+    perspective: 1000px;
 }
 
 .showcase-card {
@@ -251,18 +251,16 @@ body {
 
 .showcase-card img {
     display: block;
-    width: 250px;
+    width: 275px;
     height: auto;
     border-radius: 15px;
 }
 
-/* assign different rotations for a scattered effect */
 .showcase-card:nth-child(1) { transform: rotate(-5deg) translateY(0); }
 .showcase-card:nth-child(2) { transform: rotate(3deg) translateY(10px); }
 .showcase-card:nth-child(3) { transform: rotate(-2deg) translateY(5px); }
 .showcase-card:nth-child(4) { transform: rotate(6deg) translateY(0); }
 
-/* hover effect */
 .showcase-card:hover {
     transform: rotate(0deg) translateY(-15px) scale(1.05);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
