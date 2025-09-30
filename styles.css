@@ -220,6 +220,54 @@ body {
     color: #b0b0b0;
 }
 
+.showcase {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1b23 0%, #2d2f3e 100%);
+}
+
+.showcase .section-title {
+    margin-bottom: 60px;
+}
+
+.showcase-stack {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: -60px;
+    flex-wrap: wrap;
+    perspective: 1000px; /* makes rotation look 3D */
+}
+
+.showcase-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid rgba(138, 43, 226, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.showcase-card img {
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* assign different rotations for a scattered effect */
+.showcase-card:nth-child(1) { transform: rotate(-5deg) translateY(0); }
+.showcase-card:nth-child(2) { transform: rotate(3deg) translateY(10px); }
+.showcase-card:nth-child(3) { transform: rotate(-2deg) translateY(5px); }
+.showcase-card:nth-child(4) { transform: rotate(6deg) translateY(0); }
+
+/* hover effect */
+.showcase-card:hover {
+    transform: rotate(0deg) translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
 .support {
     padding: 100px 20px;
     background: #1a1b23;
